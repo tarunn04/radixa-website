@@ -1,289 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RADIXA LLP – Ophthalmic Equipment & Water Purification Systems</title>
-  <meta name="description" content="RADIXA LLP delivers reliable ophthalmic instruments and advanced water purification systems for clinics, laboratories, and institutions in Guwahati, Assam." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADIXA | Pure Water Solutions for North East India</title>
+  <meta name="description" content="Custom-engineered pre-filtration and RO water purification systems designed for North East India's unique water challenges — high turbidity, iron-rich and variable conditions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <a href="#hero" class="nav-logo">
-    <div class="nav-logo-mark">RX</div>
-    <span class="nav-logo-text">RADIXA LLP</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#solutions">Solutions</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Get in Touch</a>
-  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- MOBILE MENU -->
-<div id="mobile-menu" style="display:none; position:fixed; top:68px; left:0; right:0; background:white; z-index:999; padding:20px 5%; border-bottom:1px solid #E8E8E8;">
-  <ul style="list-style:none; display:flex; flex-direction:column; gap:16px;">
-    <li><a href="#solutions" onclick="toggleMenu()" style="text-decoration:none; color:#1A1A2E; font-weight:500;">Solutions</a></li>
-    <li><a href="#products" onclick="toggleMenu()" style="text-decoration:none; color:#1A1A2E; font-weight:500;">Products</a></li>
-    <li><a href="#about" onclick="toggleMenu()" style="text-decoration:none; color:#1A1A2E; font-weight:500;">About</a></li>
-    <li><a href="#contact" onclick="toggleMenu()" style="text-decoration:none; color:#1A1A2E; font-weight:500;">Contact</a></li>
-    <li><a href="#quote" onclick="toggleMenu()" style="display:inline-block; background:#2E7D5E; color:white; padding:10px 22px; border-radius:6px; text-decoration:none; font-weight:500; width:fit-content;">Request Quote</a></li>
-  </ul>
-</div>
-
-<!-- SECTION 1: HERO -->
-<section id="hero">
-  <div class="hero-logo-wrap"><span>RX</span></div>
-  <div class="hero-tagline">Science. Accuracy. Trust.</div>
-  <h1>RADIXA LLP</h1>
-  <div class="hero-divider"></div>
-  <p class="hero-desc">Delivering reliable ophthalmic instruments and advanced water purification systems for clinics, laboratories, and institutions.</p>
-  <div class="btn-group">
-    <a href="#contact" class="btn-primary">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-      Contact Us
-    </a>
-    <a href="https://wa.me/917576944890" target="_blank" class="btn-outline">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      WhatsApp
-    </a>
-  </div>
-</section>
-
-<!-- SECTION 2: SOLUTIONS -->
-<section id="solutions" class="section section-alt">
-  <div class="section-center">
-    <div class="section-label">What We Offer</div>
-    <h2 class="section-title">Our Core Solutions</h2>
-    <p class="section-sub">Specialized products for medical and industrial needs, backed by technical support.</p>
-  </div>
-  <div class="solutions-grid">
-    <div class="solution-card">
-      <div class="solution-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="1" fill="#2E7D5E"/></svg>
-      </div>
-      <h3>Ophthalmic Equipment</h3>
-      <p>Precision instruments for eye clinics and hospitals to support accurate diagnosis and patient care.</p>
-    </div>
-    <div class="solution-card">
-      <div class="solution-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3 6h6l-5 4 2 6-6-4-6 4 2-6-5-4h6z" stroke-linejoin="round"/><circle cx="12" cy="12" r="2"/></svg>
-      </div>
-      <h3>Water Purification Systems</h3>
-      <p>RO and laboratory-grade purification systems ensuring high-quality water for medical and industrial use.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 3: TRUST IMAGES -->
-<section class="section">
-  <div class="trust-images">
-    <div class="trust-img"><img src="assets/images/eye_clinic.png" alt="Eye clinic with ophthalmic equipment" loading="lazy" /></div>
-    <div class="trust-img"><img src="assets/images/water_facility.png" alt="Water purification facility" loading="lazy" /></div>
-  </div>
-  <p class="trust-caption">Providing dependable solutions with a focus on performance, durability, and service support.</p>
-</section>
-
-<!-- SECTION 4: PRODUCTS -->
-<section id="products" class="section section-alt">
-  <div class="section-center">
-    <div class="section-label">Our Range</div>
-    <h2 class="section-title">Our Products</h2>
-    <p class="section-sub">Trusted instruments for clinical accuracy and industrial-grade water treatment.</p>
-  </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="product-img"><img src="assets/images/slit_lamp.png" alt="Slit Lamp" loading="lazy" /></div>
-      <div class="product-info"><h3>Slit Lamp</h3><p>High-precision biomicroscope for detailed eye examination.</p></div>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><img src="assets/images/trial_lens_set.png" alt="Trial Lens Set" loading="lazy" /></div>
-      <div class="product-info"><h3>Trial Lens Set</h3><p>Complete lens set for accurate refraction and vision testing.</p></div>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><img src="assets/images/autorefractometer.png" alt="Autorefractometer" loading="lazy" /></div>
-      <div class="product-info"><h3>Autorefractometer</h3><p>Automated refractive error measurement for fast, precise results.</p></div>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><img src="assets/images/ro_system.png" alt="RO Systems" loading="lazy" /></div>
-      <div class="product-info"><h3>RO Systems</h3><p>Industrial reverse osmosis systems for pure, treated water output.</p></div>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><img src="assets/images/lab_water_purifier.png" alt="Laboratory Water Purification Units" loading="lazy" /></div>
-      <div class="product-info"><h3>Laboratory Water Purification Units</h3><p>Medical-grade water systems for labs and research institutions.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 5: WHY RADIXA -->
-<section class="section">
-  <div class="section-center">
-    <div class="section-label">Our Promise</div>
-    <h2 class="section-title">Why Choose RADIXA</h2>
-    <p class="section-sub">We are committed to quality, reliability, and long-term service partnerships.</p>
-  </div>
-  <div class="why-grid">
-    <div class="why-item">
-      <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div><h4>Trusted and Tested Products</h4><p>Every product meets clinical and industrial standards before delivery.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div><h4>Installation &amp; Technical Support</h4><p>On-site installation and ongoing technical assistance for all products.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div><h4>Fast Response Service</h4><p>Quick turnaround on service calls and maintenance requests.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div><h4>Focus on Accuracy &amp; Reliability</h4><p>Precision-focused products for environments where quality matters most.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 6: ABOUT -->
-<section id="about" class="section section-alt">
-  <div class="about-inner">
-    <div class="section-label" style="text-align:center">Who We Are</div>
-    <h2 class="section-title" style="text-align:center">About Us</h2>
-    <p>RADIXA LLP, based in Guwahati, Assam, provides specialized solutions in ophthalmic diagnostic equipment and water purification systems. We are committed to delivering quality products backed by dependable service and technical support.</p>
-    <div class="about-badge">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-      Guwahati, Assam, India
-    </div>
-  </div>
-</section>
-
-<!-- REQUEST QUOTE -->
-<section id="quote" class="section">
-  <div class="section-center">
-    <div class="section-label">Get a Quote</div>
-    <h2 class="section-title">Request a Quote</h2>
-    <p class="section-sub">Tell us your requirement and we'll get back to you promptly.</p>
-  </div>
-  <div class="quote-inner">
-    <form id="quote-form" onsubmit="submitQuote(event)">
-      <div class="form-row">
-        <label for="q-name">Full Name</label>
-        <input type="text" id="q-name" placeholder="Your name" required />
-      </div>
-      <div class="form-row">
-        <label for="q-phone">Phone Number</label>
-        <input type="tel" id="q-phone" placeholder="+91 XXXXX XXXXX" required />
-      </div>
-      <div class="form-row">
-        <label for="q-msg">Message / Requirement</label>
-        <textarea id="q-msg" placeholder="Describe your requirement..." required></textarea>
-      </div>
-      <button type="submit" class="form-submit">Send Request</button>
-    </form>
-    <div class="form-success" id="form-success">
-      ✓ Thank you! We'll contact you shortly.
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 7: CONTACT -->
-<section id="contact" class="section section-alt">
-  <div class="section-label" style="text-align:center; margin-bottom:12px;">Reach Us</div>
-  <h2 class="section-title" style="text-align:center; margin-bottom:48px;">Contact Us</h2>
-  <div class="contact-grid">
-    <div class="contact-info">
-      <div class="contact-item">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
         </div>
-        <div>
-          <h4>Address</h4>
-          <p>House No. 22, Pandav Nagar, Pandu<br>Guwahati – 781012, Assam, India</p>
+        <span class="logo-text">RADIXA</span>
+      </a>
+      <div class="nav-links">
+        <a href="#challenges">Challenges</a>
+        <a href="#technology">Technology</a>
+        <a href="#products">Products</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Get a Water Test &rarr;</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobileBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-links">
+      <a href="#challenges">Challenges</a>
+      <a href="#technology">Technology</a>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Get a Water Test &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-anim">
+      <div class="water-blob blob-1"></div>
+      <div class="water-blob blob-2"></div>
+      <div class="water-blob blob-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Pure Water. Built for the North East.
+        </div>
+        <h1 class="hero-title">
+          Safe Drinking Water<br>
+          <span class="gradient-text">For Every Drop.</span>
+        </h1>
+        <p class="hero-desc">
+          North East India faces unique water challenges — high turbidity, seasonal contamination, iron content, and fluctuating water quality. We deliver custom-engineered pre-filtration and RO systems designed specifically for these conditions.
+        </p>
+        <div class="hero-checks">
+          <span class="check-item"><span class="check-icon">✔</span> Residential</span>
+          <span class="check-item"><span class="check-icon">✔</span> Commercial</span>
+          <span class="check-item"><span class="check-icon">✔</span> Institutional</span>
+          <span class="check-item"><span class="check-icon">✔</span> Healthcare &amp; Labs</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Get a Free Water Test &rarr;</a>
+          <a href="#products" class="btn btn-ghost btn-lg">View Solutions</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-val">8</div>
+            <div class="hstat-label">North East States Served</div>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <div class="hstat-val">99%</div>
+            <div class="hstat-label">Contaminant Removal</div>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <div class="hstat-val">AMC</div>
+            <div class="hstat-label">Annual Maintenance Support</div>
+          </div>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hcard-header">
+            <div class="hcard-dot green"></div>
+            <div class="hcard-dot amber"></div>
+            <div class="hcard-dot red"></div>
+            <span class="hcard-label">Water Quality Monitor</span>
+          </div>
+          <div class="hcard-metrics">
+            <div class="wm-item">
+              <span class="wm-label">Turbidity</span>
+              <div class="wm-bar"><div class="wm-fill fill-danger" style="width:82%"></div></div>
+              <span class="wm-val danger">High</span>
+            </div>
+            <div class="wm-item">
+              <span class="wm-label">Iron (Fe)</span>
+              <div class="wm-bar"><div class="wm-fill fill-warning" style="width:68%"></div></div>
+              <span class="wm-val warning">Elevated</span>
+            </div>
+            <div class="wm-item">
+              <span class="wm-label">TDS</span>
+              <div class="wm-bar"><div class="wm-fill fill-warning" style="width:55%"></div></div>
+              <span class="wm-val warning">Variable</span>
+            </div>
+            <div class="wm-item">
+              <span class="wm-label">Microbial Load</span>
+              <div class="wm-bar"><div class="wm-fill fill-danger" style="width:75%"></div></div>
+              <span class="wm-val danger">High</span>
+            </div>
+          </div>
+          <div class="hcard-after">
+            <div class="after-label">After RADIXA System</div>
+            <div class="after-grid">
+              <div class="after-item"><span class="after-icon">💧</span><span>Crystal Clear</span></div>
+              <div class="after-item"><span class="after-icon">✅</span><span>Iron Free</span></div>
+              <div class="after-item"><span class="after-icon">⚗️</span><span>Balanced TDS</span></div>
+              <div class="after-item"><span class="after-icon">🦠</span><span>Pathogen Free</span></div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4>Phone</h4>
-          <a href="tel:+917576944890">+91-7576944890</a>
+        <div class="startup-badge">
+          <div class="sb-icon">🇮🇳</div>
+          <div class="sb-text">
+            <strong>Startup India</strong>
+            <span>Recognized Initiative</span>
+          </div>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section section">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">A STARTUP INDIA INITIATIVE</span>
+          <h2 class="section-title">Born from Deep Regional Understanding</h2>
+          <p class="about-desc">We are an Indian startup recognized under the Startup India initiative, committed to delivering affordable, durable, and high-performance water purification systems for North East India.</p>
+          <p class="about-desc">Our mission is to ensure safe, reliable drinking water even in the most challenging water conditions across the eight North East states.</p>
+          <div class="states-list">
+            <span>Assam</span><span>Meghalaya</span><span>Tripura</span><span>Mizoram</span>
+            <span>Manipur</span><span>Nagaland</span><span>Arunachal Pradesh</span><span>Sikkim</span>
+          </div>
         </div>
-        <div>
-          <h4>Email</h4>
+        <div class="about-cards">
+          <div class="av-card">
+            <div class="av-icon">🎯</div>
+            <h3>Our Vision</h3>
+            <p>To become the most trusted water purification partner in North East India.</p>
+          </div>
+          <div class="av-card accent">
+            <div class="av-icon">🚀</div>
+            <h3>Our Mission</h3>
+            <p>To design region-specific water treatment solutions that combine technology, affordability, and long-term reliability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section id="challenges" class="challenges-section section bg-dark">
+    <div class="section-container">
+      <div class="section-header light">
+        <span class="section-label">THE PROBLEM</span>
+        <h2 class="section-title">North East India's<br><span class="gradient-text">Water Challenges</span></h2>
+        <p class="section-sub">Standard purifiers fail here. Our systems are engineered for these exact conditions.</p>
+      </div>
+      <div class="challenges-grid">
+        <div class="challenge-card">
+          <div class="ch-icon">🌧️</div>
+          <h3>High Monsoon Turbidity</h3>
+          <p>Seasonal flooding dramatically increases suspended solids, mud, silt and clay in water sources.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-icon">⚙️</div>
+          <h3>Iron &amp; Manganese Contamination</h3>
+          <p>Underground and surface sources carry excess iron and manganese that standard filters can't handle.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-icon">🦠</div>
+          <h3>Microbial Load</h3>
+          <p>Surface water sources carry high levels of bacteria and pathogens, particularly during floods.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-icon">📊</div>
+          <h3>Variable TDS &amp; Hardness</h3>
+          <p>TDS and water hardness fluctuate significantly across seasons and geography in the region.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-icon">💨</div>
+          <h3>Unstable Water Pressure</h3>
+          <p>Inconsistent pressure and seasonal supply changes make conventional systems unreliable.</p>
+        </div>
+        <div class="challenge-card highlight-card">
+          <div class="ch-icon">🛠️</div>
+          <h3>Our Answer</h3>
+          <p>Custom multi-stage pre-filtration + RO systems engineered specifically for these challenges.</p>
+          <a href="#technology" class="ch-link">See How It Works &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section id="technology" class="tech-section section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">OUR TECHNOLOGY APPROACH</span>
+        <h2 class="section-title">Engineered for<br>North East Conditions</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card primary-tech">
+          <div class="tech-badge">Our Strength</div>
+          <div class="tech-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 4h18v4H3zM3 10h18v4H3zM3 16h18v4H3z"/>
+            </svg>
+          </div>
+          <h3>Advanced Pre-Filtration</h3>
+          <p>Our multi-stage pre-filtration systems form the backbone of every solution — protecting RO membranes and extending system life.</p>
+          <ul class="tech-list">
+            <li>Suspended solids removal</li>
+            <li>Mud, silt &amp; clay filtration</li>
+            <li>Iron particle removal</li>
+            <li>Organic impurity reduction</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon-wrap secondary">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3>RO-Based Purification</h3>
+          <ul class="tech-list">
+            <li>High-performance RO membranes</li>
+            <li>Optional UV &amp; UF integration</li>
+            <li>TDS balancing for better taste</li>
+            <li>Safe mineral retention</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon-wrap secondary">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l9 4.5v9L12 20 3 15.5v-9z"/>
+            </svg>
+          </div>
+          <h3>System Customization</h3>
+          <ul class="tech-list">
+            <li>Raw water analysis first</li>
+            <li>Usage requirement mapping</li>
+            <li>Location-specific design</li>
+            <li>Budget optimization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tech-flow">
+        <div class="flow-step">
+          <div class="flow-num">01</div>
+          <div class="flow-text">
+            <strong>Raw Water In</strong>
+            <span>Turbid, iron-rich, contaminated</span>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">02</div>
+          <div class="flow-text">
+            <strong>Pre-Filtration</strong>
+            <span>Multi-stage sediment &amp; iron removal</span>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">03</div>
+          <div class="flow-text">
+            <strong>RO + UV/UF</strong>
+            <span>Deep purification &amp; disinfection</span>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step highlight-step">
+          <div class="flow-num">04</div>
+          <div class="flow-text">
+            <strong>Pure Water Out</strong>
+            <span>Safe, balanced, mineral-rich</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products-section section bg-gray">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">PRODUCTS &amp; SOLUTIONS</span>
+        <h2 class="section-title">The Right System<br>for Every Need</h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="prod-icon">🏠</div>
+          <h3>Residential</h3>
+          <p>Pre-Filter + RO systems ideal for borewell, river &amp; mixed water sources. Compact, durable, easy to maintain.</p>
+          <ul>
+            <li>Suitable for borewell &amp; river water</li>
+            <li>Compact design for home use</li>
+            <li>Easy DIY filter replacement</li>
+          </ul>
+          <a href="#contact" class="prod-link">Enquire Now &rarr;</a>
+        </div>
+        <div class="product-card featured-product">
+          <div class="prod-featured-badge">Most Popular</div>
+          <div class="prod-icon">🏢</div>
+          <h3>Commercial</h3>
+          <p>Offices, hotels, schools &amp; hostels. High-capacity units with iron removal + RO and low downtime.</p>
+          <ul>
+            <li>High-capacity output</li>
+            <li>Iron removal integrated</li>
+            <li>Low maintenance downtime</li>
+          </ul>
+          <a href="#contact" class="prod-link">Enquire Now &rarr;</a>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🏥</div>
+          <h3>Institutional &amp; Healthcare</h3>
+          <p>Hospitals, laboratories &amp; government institutions. High-purity water solutions, compliance-ready systems.</p>
+          <ul>
+            <li>High-purity output</li>
+            <li>Compliance-ready</li>
+            <li>Lab-grade filtration</li>
+          </ul>
+          <a href="#contact" class="prod-link">Enquire Now &rarr;</a>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🌍</div>
+          <h3>Custom Projects</h3>
+          <p>Community RO plants, institutional water filtration, and tailor-made installations for large requirements.</p>
+          <ul>
+            <li>Community RO plants</li>
+            <li>Institutional filtration</li>
+            <li>Tailor-made installations</li>
+          </ul>
+          <a href="#contact" class="prod-link">Discuss Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why-us" class="whyus-section section bg-dark">
+    <div class="section-container">
+      <div class="whyus-grid">
+        <div class="whyus-content">
+          <span class="section-label">WHY CHOOSE US</span>
+          <h2 class="section-title" style="color:#fff">We Don't Sell<br><span class="gradient-text">Generic Products.</span></h2>
+          <p class="whyus-desc">We deliver solutions that work locally. Every system is designed with deep understanding of North East India's water conditions.</p>
+          <div class="whyus-reasons">
+            <div class="reason-item">
+              <div class="reason-icon">🗺️</div>
+              <div>
+                <strong>Designed for North East India</strong>
+                <p>Systems tuned to regional water characteristics — not generic specs.</p>
+              </div>
+            </div>
+            <div class="reason-item">
+              <div class="reason-icon">🔬</div>
+              <div>
+                <strong>Pre-Filtration First Philosophy</strong>
+                <p>Extends RO membrane life dramatically — saving you money long-term.</p>
+              </div>
+            </div>
+            <div class="reason-item">
+              <div class="reason-icon">💰</div>
+              <div>
+                <strong>Affordable Pricing</strong>
+                <p>Startup India backed — we keep costs accessible without compromise.</p>
+              </div>
+            </div>
+            <div class="reason-item">
+              <div class="reason-icon">🛎️</div>
+              <div>
+                <strong>Local Service &amp; Support</strong>
+                <p>Reliable after-sales network across all 8 North East states.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="whyus-visual">
+          <div class="sustainability-card">
+            <h3>Sustainability &amp; Responsibility</h3>
+            <div class="sus-items">
+              <div class="sus-item"><span>♻️</span> Water recovery optimization</div>
+              <div class="sus-item"><span>💧</span> Low wastage designs</div>
+              <div class="sus-item"><span>⚡</span> Energy-efficient components</div>
+              <div class="sus-item"><span>🔧</span> Long-lasting consumables</div>
+            </div>
+            <p class="sus-footer">Safe water without environmental compromise.</p>
+          </div>
+          <div class="service-card">
+            <h3>After-Sales &amp; Service</h3>
+            <div class="svc-items">
+              <div class="svc-item">✔ Installation &amp; commissioning</div>
+              <div class="svc-item">✔ Annual maintenance contracts (AMC)</div>
+              <div class="svc-item">✔ Consumables &amp; spares supply</div>
+              <div class="svc-item">✔ Technical support &amp; water testing</div>
+            </div>
+            <div class="svc-tag">Quick response across North East India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section section">
+    <div class="section-container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="section-label">GET IN TOUCH</span>
+          <h2 class="contact-title">Let's Solve Your<br>Water Problem</h2>
+          <p class="contact-desc">Get a water test. Get the right solution. On-site inspection available across all North East states.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <span class="info-label">Call Us</span>
+                <a href="tel:+917576944890" class="info-val">+91 75769 44890</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div>
+                <span class="info-label">Email Us</span>
+                <a href="mailto:research@radixa.in" class="info-val">research@radixa.in</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <span class="info-label">Visit Us</span>
+                <span class="info-val">House No. 22, Pandav Nagar, Pandu<br>Guwahati – 781012, Assam, India</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🗺️</div>
+              <div>
+                <span class="info-label">Service Areas</span>
+                <span class="info-val">All 8 North East States</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3 class="form-heading">Request a Free Consultation</h3>
+          <form class="clean-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+91 00000 00000" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label>Requirement Type</label>
+              <select class="form-control">
+                <option value="">Select your requirement</option>
+                <option>Residential Purifier</option>
+                <option>Commercial Solution</option>
+                <option>Institutional / Healthcare</option>
+                <option>Community RO Plant</option>
+                <option>Water Testing Only</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell Us About Your Water Problem</label>
+              <textarea class="form-control" rows="3" placeholder="Describe your water source, location, usage..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full btn-lg" id="submitBtn">
+              Submit Request &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div>
+            <span class="logo-text">RADIXA</span>
+            <p class="footer-tagline">Pure Water. Built for the North East.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#challenges">Challenges</a>
+          <a href="#technology">Technology</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+917576944890">+91 75769 44890</a>
           <a href="mailto:research@radixa.in">research@radixa.in</a>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-        </div>
-        <div>
-          <h4>Website</h4>
-          <a href="https://www.radixa.in" target="_blank">www.radixa.in</a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RADIXA LLP. All rights reserved. | Startup India Recognized</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
     </div>
-    <div class="map-wrap">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.8634!2d91.6833!3d26.1734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a57c0000001%3A0x0!2sPandav+Nagar%2C+Pandu%2C+Guwahati%2C+Assam+781012!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="RADIXA LLP Location">
-      </iframe>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">RADIXA LLP</div>
-  <div class="footer-tagline">Science. Accuracy. Trust.</div>
-  <div class="footer-copy">© 2026 RADIXA LLP. All rights reserved.</div>
-</footer>
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/917576944890" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileBtn.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
 
-<script>
-function toggleMenu() {
-  const m = document.getElementById('mobile-menu');
-  m.style.display = m.style.display === 'none' ? 'block' : 'none';
-}
-
-function submitQuote(e) {
-  e.preventDefault();
-  document.getElementById('quote-form').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
-}
-
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  nav.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.06)' : 'none';
-});
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});
-</script>
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = 'Request Sent ✓';
+      btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = 'Submit Request &rarr;';
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3500);
+    });
+
+    // Animate stat numbers on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.challenge-card, .tech-card, .product-card, .reason-item, .av-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
