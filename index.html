@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260427b">
 </head>
 <body>
 
@@ -17,10 +17,7 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
         <div class="logo-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-            <path d="M12 6v6l4 2"/>
-          </svg>
+          <img src="assets/images/radixa_only_logo_high_quality.webp" alt="Radixa Logo" class="logo-img">
         </div>
         <span class="logo-text">RADIXA</span>
       </a>
@@ -100,50 +97,16 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hcard-header">
-            <div class="hcard-dot green"></div>
-            <div class="hcard-dot amber"></div>
-            <div class="hcard-dot red"></div>
-            <span class="hcard-label">Water Quality Monitor</span>
-          </div>
-          <div class="hcard-metrics">
-            <div class="wm-item">
-              <span class="wm-label">Turbidity</span>
-              <div class="wm-bar"><div class="wm-fill fill-danger" style="width:82%"></div></div>
-              <span class="wm-val danger">High</span>
-            </div>
-            <div class="wm-item">
-              <span class="wm-label">Iron (Fe)</span>
-              <div class="wm-bar"><div class="wm-fill fill-warning" style="width:68%"></div></div>
-              <span class="wm-val warning">Elevated</span>
-            </div>
-            <div class="wm-item">
-              <span class="wm-label">TDS</span>
-              <div class="wm-bar"><div class="wm-fill fill-warning" style="width:55%"></div></div>
-              <span class="wm-val warning">Variable</span>
-            </div>
-            <div class="wm-item">
-              <span class="wm-label">Microbial Load</span>
-              <div class="wm-bar"><div class="wm-fill fill-danger" style="width:75%"></div></div>
-              <span class="wm-val danger">High</span>
-            </div>
-          </div>
-          <div class="hcard-after">
-            <div class="after-label">After RADIXA System</div>
-            <div class="after-grid">
-              <div class="after-item"><span class="after-icon">💧</span><span>Crystal Clear</span></div>
-              <div class="after-item"><span class="after-icon">✅</span><span>Iron Free</span></div>
-              <div class="after-item"><span class="after-icon">⚗️</span><span>Balanced TDS</span></div>
-              <div class="after-item"><span class="after-icon">🦠</span><span>Pathogen Free</span></div>
-            </div>
-          </div>
+        <div class="hero-image-showcase">
+          <img src="assets/images/hero_purifier.webp" alt="Modern RADIXA water purification system" class="hero-showcase-img">
+          <div class="hero-image-glow"></div>
         </div>
+
         <div class="startup-badge">
           <div class="sb-icon">🇮🇳</div>
           <div class="sb-text">
-            <strong>Startup India</strong>
-            <span>Recognized Initiative</span>
+            <strong>Proudly Made in India</strong>
+            <span>An Indian Startup</span>
           </div>
         </div>
       </div>
@@ -153,11 +116,19 @@
   <!-- About -->
   <section id="about" class="about-section section">
     <div class="section-container">
+      <div class="about-banner">
+        <img src="assets/images/founder.webp" alt="Arnab Roy — Co-Founder of RADIXA in water purification lab" class="about-banner-img">
+        <div class="about-banner-overlay"></div>
+        <div class="about-banner-text">
+          <span class="section-label">SERVING NORTH EAST INDIA</span>
+          <h2>Pure Water Across 8 States</h2>
+        </div>
+      </div>
       <div class="about-grid">
         <div class="about-content">
-          <span class="section-label">A STARTUP INDIA INITIATIVE</span>
+          <span class="section-label">AN INDIAN STARTUP</span>
           <h2 class="section-title">Born from Deep Regional Understanding</h2>
-          <p class="about-desc">We are an Indian startup recognized under the Startup India initiative, committed to delivering affordable, durable, and high-performance water purification systems for North East India.</p>
+          <p class="about-desc">We are an Indian startup committed to delivering affordable, durable, and high-performance water purification systems for North East India.</p>
           <p class="about-desc">Our mission is to ensure safe, reliable drinking water even in the most challenging water conditions across the eight North East states.</p>
           <div class="states-list">
             <span>Assam</span><span>Meghalaya</span><span>Tripura</span><span>Mizoram</span>
@@ -277,36 +248,166 @@
           </ul>
         </div>
       </div>
-      <div class="tech-flow">
-        <div class="flow-step">
-          <div class="flow-num">01</div>
-          <div class="flow-text">
-            <strong>Raw Water In</strong>
-            <span>Turbid, iron-rich, contaminated</span>
+      <div class="tech-flow tech-flow-vertical">
+        <div class="vflow-step">
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <div class="flow-text">
+              <strong>Raw Water In</strong>
+              <span>Filtration of water &amp; feeding 10L</span>
+            </div>
           </div>
         </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step">
-          <div class="flow-num">02</div>
-          <div class="flow-text">
-            <strong>Pre-Filtration</strong>
-            <span>Multi-stage sediment &amp; iron removal</span>
+        <div class="vflow-arrow">↓</div>
+        <div class="vflow-step">
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <div class="flow-text">
+              <strong>Pre-Filtration</strong>
+              <span>Multi-stage sediment &amp; iron removal</span>
+            </div>
           </div>
         </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step">
-          <div class="flow-num">03</div>
-          <div class="flow-text">
-            <strong>RO + UV/UF</strong>
-            <span>Deep purification &amp; disinfection</span>
+        <div class="vflow-arrow">↓</div>
+        <div class="vflow-step">
+          <div class="flow-step flow-fork-step">
+            <div class="flow-num">03</div>
+            <div class="flow-text">
+              <strong>RO + UV/UF</strong>
+              <span>Deep purification &amp; disinfection</span>
+            </div>
           </div>
         </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step highlight-step">
-          <div class="flow-num">04</div>
-          <div class="flow-text">
-            <strong>Pure Water Out</strong>
-            <span>Safe, balanced, mineral-rich</span>
+        <div class="vflow-arrow">↓</div>
+        <!-- Step 04: Bifurcation into 2 outputs -->
+        <div class="vflow-bifurcation">
+          <div class="vflow-branch">
+            <div class="flow-step highlight-step">
+              <div class="flow-num">04</div>
+              <div class="flow-text">
+                <strong>Pure Water Out</strong>
+                <span>Safe, balanced, mineral-rich drinking water</span>
+              </div>
+            </div>
+          </div>
+          <div class="vflow-branch">
+            <div class="flow-step flow-reuse-step">
+              <div class="flow-num">♻️</div>
+              <div class="flow-text">
+                <strong>Reject Water Recovery</strong>
+                <span>60% reject stored in 2-subpart tank — zero wastage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Water Recovery Technology -->
+  <section id="water-recovery" class="recovery-section section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">ZERO WASTE PHILOSOPHY</span>
+        <h2 class="section-title">Reject Water<br><span class="gradient-text">Recovery System</span></h2>
+        <p class="section-sub">Most RO systems waste 60% of input water. We recover and reuse it — because every drop matters.</p>
+      </div>
+
+      <!-- Visual Flow Diagram (based on process blueprint) -->
+      <div class="recovery-flow">
+        <div class="rflow-step rflow-input">
+          <div class="rflow-icon">🚰</div>
+          <div class="rflow-val">Raw Water</div>
+          <div class="rflow-label">Untreated Source Water</div>
+        </div>
+        <div class="rflow-connector">
+          <div class="rflow-line"></div>
+          <div class="rflow-arrow-icon">→</div>
+        </div>
+        <div class="rflow-step rflow-process">
+          <div class="rflow-icon">🔧</div>
+          <div class="rflow-val">Pre-Filter</div>
+          <div class="rflow-label">Sediment, Iron &amp; Turbidity Removal</div>
+        </div>
+        <div class="rflow-connector">
+          <div class="rflow-line"></div>
+          <div class="rflow-arrow-icon">→</div>
+        </div>
+        <div class="rflow-step rflow-process rflow-lopu">
+          <div class="rflow-icon">⚙️</div>
+          <div class="rflow-val">LOPU</div>
+          <div class="rflow-label">Loop Purification Unit (RO + UV/UF)</div>
+        </div>
+        <div class="rflow-split">
+          <div class="rflow-branch pure">
+            <div class="rflow-branch-line"></div>
+            <div class="rflow-step rflow-pure">
+              <div class="rflow-icon">💧</div>
+              <div class="rflow-val">Pure Water</div>
+              <div class="rflow-label">Safe, Mineral-Rich Output</div>
+              <div class="rflow-sublabel">Ready to use</div>
+            </div>
+          </div>
+          <div class="rflow-branch reject">
+            <div class="rflow-branch-line"></div>
+            <div class="rflow-step rflow-reject">
+              <div class="rflow-icon">♻️</div>
+              <div class="rflow-val">Waste Water</div>
+              <div class="rflow-label">Reject Water Storage</div>
+              <div class="rflow-sublabel">Recovered &amp; reused, not drained</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recovery Tank Feature -->
+      <div class="recovery-detail-grid">
+        <div class="recovery-card main-recovery">
+          <div class="recovery-tank-image">
+            <img src="assets/images/recovery_tank.webp" alt="2-Subpart reject water recovery tank system" class="recovery-img">
+          </div>
+          <div class="recovery-card-badge">Our Innovation</div>
+          <h3>2-Subpart Reject Water Recovery Tank</h3>
+          <p>Unlike conventional systems that simply drain reject water, our proprietary 2-subpart recovery storage tank captures every drop of reject water and channels it for reuse — dramatically minimizing wastage.</p>
+          <div class="recovery-features">
+            <div class="rfeat">
+              <span class="rfeat-icon">🔄</span>
+              <div>
+                <strong>Dual-Chamber Storage</strong>
+                <p>Two independent compartments for staged recovery — separating initial high-TDS reject from lower-TDS reject for smarter reuse.</p>
+              </div>
+            </div>
+            <div class="rfeat">
+              <span class="rfeat-icon">🪣</span>
+              <div>
+                <strong>Secondary Usage Ready</strong>
+                <p>Stored reject water is perfect for mopping, gardening, car washing, toilet flushing — nothing goes to the drain.</p>
+              </div>
+            </div>
+            <div class="rfeat">
+              <span class="rfeat-icon">💰</span>
+              <div>
+                <strong>Reduces Water Bills</strong>
+                <p>By recovering 60% of input water, households and businesses save significantly on water costs every month.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recovery-stats-stack">
+          <div class="rstat-card">
+            <div class="rstat-number">60<span class="rstat-unit">%</span></div>
+            <div class="rstat-label">Reject Water Recovered</div>
+            <div class="rstat-desc">Instead of draining, we store and reuse</div>
+          </div>
+          <div class="rstat-card">
+            <div class="rstat-number">2<span class="rstat-unit">-Part</span></div>
+            <div class="rstat-label">Recovery Tank Design</div>
+            <div class="rstat-desc">Staged dual-chamber storage system</div>
+          </div>
+          <div class="rstat-card accent-rstat">
+            <div class="rstat-number">0<span class="rstat-unit">%</span></div>
+            <div class="rstat-label">Water Wastage Target</div>
+            <div class="rstat-desc">Our mission: zero water waste</div>
           </div>
         </div>
       </div>
@@ -322,6 +423,9 @@
       </div>
       <div class="products-grid">
         <div class="product-card">
+          <div class="prod-image">
+            <img src="assets/images/product_residential.webp" alt="Residential water purifier" class="prod-img">
+          </div>
           <div class="prod-icon">🏠</div>
           <h3>Residential</h3>
           <p>Pre-Filter + RO systems ideal for borewell, river &amp; mixed water sources. Compact, durable, easy to maintain.</p>
@@ -334,6 +438,9 @@
         </div>
         <div class="product-card featured-product">
           <div class="prod-featured-badge">Most Popular</div>
+          <div class="prod-image">
+            <img src="assets/images/product_commercial.webp" alt="Commercial RO system" class="prod-img">
+          </div>
           <div class="prod-icon">🏢</div>
           <h3>Commercial</h3>
           <p>Offices, hotels, schools &amp; hostels. High-capacity units with iron removal + RO and low downtime.</p>
@@ -345,6 +452,9 @@
           <a href="#contact" class="prod-link">Enquire Now &rarr;</a>
         </div>
         <div class="product-card">
+          <div class="prod-image">
+            <img src="assets/images/product_healthcare.webp" alt="Healthcare water purification" class="prod-img">
+          </div>
           <div class="prod-icon">🏥</div>
           <h3>Institutional &amp; Healthcare</h3>
           <p>Hospitals, laboratories &amp; government institutions. High-purity water solutions, compliance-ready systems.</p>
@@ -356,6 +466,9 @@
           <a href="#contact" class="prod-link">Enquire Now &rarr;</a>
         </div>
         <div class="product-card">
+          <div class="prod-image">
+            <img src="assets/images/product_commercial.webp" alt="Custom water project" class="prod-img">
+          </div>
           <div class="prod-icon">🌍</div>
           <h3>Custom Projects</h3>
           <p>Community RO plants, institutional water filtration, and tailor-made installations for large requirements.</p>
@@ -373,10 +486,36 @@
   <!-- Why Us -->
   <section id="why-us" class="whyus-section section bg-dark">
     <div class="section-container">
+      <!-- Pricing Headline Banner -->
+      <div class="pricing-hero-banner">
+        <div class="pricing-hero-content">
+          <div class="pricing-flag">🇮🇳 Proudly Indian Startup</div>
+          <h2 class="pricing-hero-title">Affordable Costing.<br><span class="gradient-text">No Compromise.</span></h2>
+          <p class="pricing-hero-desc">As an Indian startup, we engineer our pricing to be effective and accessible — because safe water shouldn't be a luxury. We cut middlemen, not quality.</p>
+        </div>
+        <div class="pricing-hero-stats">
+          <div class="phs-item">
+            <div class="phs-icon">💰</div>
+            <div class="phs-val">Up to 40%</div>
+            <div class="phs-label">Lower than branded alternatives</div>
+          </div>
+          <div class="phs-item">
+            <div class="phs-icon">🏭</div>
+            <div class="phs-val">Direct</div>
+            <div class="phs-label">Factory-to-customer, no middlemen</div>
+          </div>
+          <div class="phs-item">
+            <div class="phs-icon">🔧</div>
+            <div class="phs-val">Low AMC</div>
+            <div class="phs-label">Affordable annual maintenance</div>
+          </div>
+        </div>
+      </div>
+
       <div class="whyus-grid">
         <div class="whyus-content">
           <span class="section-label">WHY CHOOSE US</span>
-          <h2 class="section-title" style="color:#fff">We Don't Sell<br><span class="gradient-text">Generic Products.</span></h2>
+          <h2 class="section-title">We Don't Sell<br><span class="gradient-text">Generic Products.</span></h2>
           <p class="whyus-desc">We deliver solutions that work locally. Every system is designed with deep understanding of North East India's water conditions.</p>
           <div class="whyus-reasons">
             <div class="reason-item">
@@ -393,40 +532,47 @@
                 <p>Extends RO membrane life dramatically — saving you money long-term.</p>
               </div>
             </div>
-            <div class="reason-item">
+            <div class="reason-item highlight-reason">
               <div class="reason-icon">💰</div>
               <div>
-                <strong>Affordable Pricing</strong>
-                <p>Startup India backed — we keep costs accessible without compromise.</p>
+                <strong>Affordable & Effective Pricing</strong>
+                <p>As an Indian startup, we keep pricing effective and accessible — delivering premium quality at a fraction of big brand costs. No hidden charges, no inflated MRPs.</p>
+              </div>
+            </div>
+            <div class="reason-item">
+              <div class="reason-icon">♻️</div>
+              <div>
+                <strong>Zero Water Wastage</strong>
+                <p>Our 2-subpart reject water recovery tank stores and reuses 60% reject water — minimizing wastage.</p>
               </div>
             </div>
             <div class="reason-item">
               <div class="reason-icon">🛎️</div>
               <div>
-                <strong>Local Service &amp; Support</strong>
-                <p>Reliable after-sales network across all 8 North East states.</p>
+                <strong>Local Service & Support</strong>
+                <p>Reliable after-sales network across all 8 North East states. Quick response, always.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="whyus-visual">
           <div class="sustainability-card">
-            <h3>Sustainability &amp; Responsibility</h3>
+            <h3>Sustainability & Responsibility</h3>
             <div class="sus-items">
-              <div class="sus-item"><span>♻️</span> Water recovery optimization</div>
-              <div class="sus-item"><span>💧</span> Low wastage designs</div>
+              <div class="sus-item"><span>♻️</span> Reject water recovery & reuse</div>
+              <div class="sus-item"><span>💧</span> 2-subpart storage to minimize wastage</div>
               <div class="sus-item"><span>⚡</span> Energy-efficient components</div>
-              <div class="sus-item"><span>🔧</span> Long-lasting consumables</div>
+              <div class="sus-item"><span>🔧</span> Long-lasting, affordable consumables</div>
             </div>
             <p class="sus-footer">Safe water without environmental compromise.</p>
           </div>
           <div class="service-card">
-            <h3>After-Sales &amp; Service</h3>
+            <h3>After-Sales & Service</h3>
             <div class="svc-items">
-              <div class="svc-item">✔ Installation &amp; commissioning</div>
+              <div class="svc-item">✔ Installation & commissioning</div>
               <div class="svc-item">✔ Annual maintenance contracts (AMC)</div>
-              <div class="svc-item">✔ Consumables &amp; spares supply</div>
-              <div class="svc-item">✔ Technical support &amp; water testing</div>
+              <div class="svc-item">✔ Consumables & spares supply</div>
+              <div class="svc-item">✔ Technical support & water testing</div>
             </div>
             <div class="svc-tag">Quick response across North East India</div>
           </div>
@@ -480,24 +626,24 @@
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" class="form-control" placeholder="Your first name" required>
+                <input type="text" id="firstName" class="form-control" placeholder="Your first name" required>
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" class="form-control" placeholder="Your last name" required>
+                <input type="text" id="lastName" class="form-control" placeholder="Your last name" required>
               </div>
             </div>
             <div class="form-group">
               <label>Phone Number</label>
-              <input type="tel" class="form-control" placeholder="+91 00000 00000" required>
+              <input type="tel" id="phone" class="form-control" placeholder="+91 00000 00000" required>
             </div>
             <div class="form-group">
               <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="your@email.com">
+              <input type="email" id="email" class="form-control" placeholder="your@email.com">
             </div>
             <div class="form-group">
               <label>Requirement Type</label>
-              <select class="form-control">
+              <select id="requirement" class="form-control">
                 <option value="">Select your requirement</option>
                 <option>Residential Purifier</option>
                 <option>Commercial Solution</option>
@@ -508,10 +654,11 @@
             </div>
             <div class="form-group">
               <label>Tell Us About Your Water Problem</label>
-              <textarea class="form-control" rows="3" placeholder="Describe your water source, location, usage..."></textarea>
+              <textarea id="message" class="form-control" rows="3" placeholder="Describe your water source, location, usage..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-full btn-lg" id="submitBtn">
-              Submit Request &rarr;
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Send via WhatsApp &rarr;
             </button>
           </form>
         </div>
@@ -519,16 +666,59 @@
     </div>
   </section>
 
+  <!-- Floating WhatsApp CTA (visible on mobile/tablet) -->
+  <a href="https://wa.me/917576944890?text=Hi%20RADIXA%2C%20I%27m%20interested%20in%20your%20water%20purification%20solutions." class="floating-wa" id="floatingWA" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label">Chat with us</span>
+  </a>
+
+  <!-- Meet the Expert -->
+  <section id="expert" class="expert-section section">
+    <div class="section-container">
+      <div class="expert-wrapper">
+        <div class="expert-photo-col">
+          <div class="expert-photo-frame">
+            <img src="assets/images/founder.webp" alt="Arnab Roy — Co-Founder, RADIXA" class="expert-photo">
+          </div>
+        </div>
+        <div class="expert-info">
+          <span class="section-label">MEET THE EXPERT</span>
+          <h2 class="expert-name">Arnab Roy</h2>
+          <p class="expert-role">Co-Founder, RADIXA</p>
+          <p class="expert-bio">
+            With over <strong>9 years of hands-on experience</strong> in laboratory and industrial water purification systems in <strong>Northeast India &amp; Sikkim</strong> — including a distinguished tenure at the Labwater Division at <strong>Merck Life Science Pvt. Ltd.</strong> (2016–2025) — Arnab has served <strong>pharmaceutical companies, research institutions, and academia</strong> across the region, bringing deep domain expertise in water treatment technologies, system design, and customer-specific solutions.
+          </p>
+          <div class="expert-highlights">
+            <div class="expert-tag-item">
+              <span class="expert-tag-icon">🧪</span>
+              <span>Lab &amp; Industrial Water Expert</span>
+            </div>
+            <div class="expert-tag-item">
+              <span class="expert-tag-icon">🏭</span>
+              <span>9+ Years at Merck Life Science</span>
+            </div>
+            <div class="expert-tag-item">
+              <span class="expert-tag-icon">💊</span>
+              <span>Pharma, Research &amp; Academia</span>
+            </div>
+            <div class="expert-tag-item">
+              <span class="expert-tag-icon">🗺️</span>
+              <span>Northeast India &amp; Sikkim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
+
   <footer class="footer">
     <div class="section-container">
       <div class="footer-top">
         <div class="footer-brand">
           <div class="logo-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-              <path d="M12 6v6l4 2"/>
-            </svg>
+            <img src="assets/images/radixa_only_logo_high_quality.webp" alt="Radixa Logo" class="logo-img">
           </div>
           <div>
             <span class="logo-text">RADIXA</span>
@@ -547,7 +737,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 RADIXA LLP. All rights reserved. | Startup India Recognized</p>
+        <p>&copy; 2026 RADIXA LLP. All rights reserved. | Made in India 🇮🇳</p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
@@ -577,19 +767,45 @@
       });
     });
 
-    // Form submission
+    // Form submission → WhatsApp
     document.getElementById('contactForm').addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const requirement = document.getElementById('requirement').value;
+      const message = document.getElementById('message').value.trim();
+
+      // Build WhatsApp message
+      let waMsg = `*New Consultation Request — RADIXA*\n\n`;
+      waMsg += `*Name:* ${firstName} ${lastName}\n`;
+      waMsg += `*Phone:* ${phone}\n`;
+      if (email) waMsg += `*Email:* ${email}\n`;
+      if (requirement) waMsg += `*Requirement:* ${requirement}\n`;
+      if (message) waMsg += `\n*Details:*\n${message}\n`;
+
+      // Your WhatsApp business number (without + or spaces)
+      const waNumber = '917576944890';
+      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMsg)}`;
+
+      // Visual feedback then redirect
       const btn = document.getElementById('submitBtn');
-      btn.innerHTML = 'Request Sent ✓';
-      btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+      btn.innerHTML = 'Opening WhatsApp… ✓';
+      btn.style.background = 'linear-gradient(135deg, #25D366, #128C7E)';
       btn.disabled = true;
+
       setTimeout(() => {
-        btn.innerHTML = 'Submit Request &rarr;';
-        btn.style.background = '';
-        btn.disabled = false;
-        e.target.reset();
-      }, 3500);
+        window.open(waUrl, '_blank');
+        // Reset after a delay
+        setTimeout(() => {
+          btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Send via WhatsApp &rarr;`;
+          btn.style.background = '';
+          btn.disabled = false;
+          e.target.reset();
+        }, 2000);
+      }, 500);
     });
 
     // Animate stat numbers on scroll
@@ -601,7 +817,7 @@
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.challenge-card, .tech-card, .product-card, .reason-item, .av-card').forEach(el => {
+    document.querySelectorAll('.challenge-card, .tech-card, .product-card, .reason-item, .av-card, .rflow-step, .recovery-card, .rstat-card, .rfeat').forEach(el => {
       observer.observe(el);
     });
   </script>
