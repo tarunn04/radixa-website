@@ -290,7 +290,7 @@ select.form-control option{background:var(--white);color:var(--heading)}
 
 /* Circular photo — no gradient border, just a clean ring on hover */
 .leader-photo-col{display:flex;justify-content:center;flex-shrink:0}
-.leader-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center top;display:block;border:2px solid var(--border);transition:border-color 0.3s ease,transform 0.4s ease}
+.leader-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center 20%;display:block;border:2px solid var(--border);transition:border-color 0.3s ease,transform 0.4s ease}
 .leader-photo--alt{object-position:center 8%}
 .leader-photo:hover{border-color:var(--accent);transform:scale(1.03)}
 @media(min-width:768px){.leader-photo{width:132px;height:132px}}
